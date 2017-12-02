@@ -141,28 +141,35 @@ Our Products
   margin-top: 28%;
   padding-bottom: 120px;
   background-color: #cecbc6;
+  position: relative;
 
-  &:before{
-    width: 50%;
-    height: 10%;
-    background-color: #cecbc6;
-    position: absolute;
-    top: 245%;
-    content: "";
-    left: 0;
-    transform: skewY(5deg);
-  }
-
-  &:after{
-    width: 50.3%;
-    height: 10%;
-    background-color: #cecbc6;
-    position: absolute;
-    top: 245%;
-    content: "";
-    right: 0;
-    transform: skewY(-5deg);
-  }
+  //&:before{
+  //  width: 50%;
+  //  height: 10%;
+  //  background-color: #cecbc6;
+  //  position: absolute;
+  //  top: 95%;
+  //  content: "";
+  //  left: 0;
+  //  transform: skew(0,5deg);
+  //  -ms-transform: skew(0,5deg);/* IE 9 */
+  //  -webkit-transform:skew(0,5deg); /* Safari */
+  //  -moz-transform: skew(0,5deg);
+  //}
+  //
+  //&:after{
+  //  width: 50.3%;
+  //  height: 10%;
+  //  background-color: #cecbc6;
+  //  position: absolute;
+  //  top: 95%;
+  //  content: "";
+  //  right: 0;
+  //  transform: skew(0,-5deg);
+  //  -ms-transform: skew(0,-5deg);/* IE 9 */
+  //  -webkit-transform:skew(0,-5deg); /* Safari */
+  //  -moz-transform: skew(0,-5deg);
+  //}
   .product-intro{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -179,7 +186,10 @@ Our Products
     top: 72%;
     content: "";
     left: 0;
-    transform: skewY(4deg);
+    transform: skew(0,4deg);
+    -ms-transform: skew(0,4deg);/* IE 9 */
+    -webkit-transform:skew(0,4deg); /* Safari */
+    -moz-transform: skew(0,4deg);
   }
   .product-intro:after{
     width: 50.3%;
@@ -189,7 +199,10 @@ Our Products
     top: 72%;
     content: "";
     right: 0;
-    transform: skewY(-4deg);
+    transform: skew(0,-4deg);
+    -ms-transform: skew(0,-4deg);/* IE 9 */
+    -webkit-transform:skew(0,-4deg); /* Safari */
+    -moz-transform: skew(0,-4deg);
   }
 
   h1.product-heading {
@@ -204,6 +217,35 @@ Our Products
   }
 }
 
-
-
+/*
+==================
+Our Media
+==================
+*/
+.media{
+  background:url("../img/media-bg.png")  no-repeat #cecbc6;
+ margin: 0;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  max-width: 100%;
+  
+  h1{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #e6b706;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+  }
+  iframe{
+    width:560px;
+    height:315px;
+    -ms-transform: skew(-20deg); /* IE 9 */
+    -webkit-transform: skew(-20deg); /* Safari */
+    -moz-transform: skew(-20deg);
+    transform: skew(-20deg); /* Standard syntax */
+  }
+}
 
